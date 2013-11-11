@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/andhrajyothiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toiButton"
+        android:layout_below="@+id/toiButton"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:src="@drawable/andhrajyothi_logo" />
+
+    <ImageButton
+        android:id="@+id/toiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eenaduButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:src="@drawable/timesofindia_logo" />
+
+    <ImageButton
+        android:id="@+id/eenaduButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toiButton"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="33dp"
+        android:background="@null"
+        android:src="@drawable/eenadu_logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/click"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
