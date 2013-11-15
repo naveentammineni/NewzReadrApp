@@ -2,7 +2,9 @@ package com.newzreadrapp.newzreadr;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -23,6 +25,7 @@ public class MainActivity extends Activity {
 		eenaduButton.setOnClickListener(onclicklistener);
 		toiButton.setOnClickListener(onclicklistener);
 		andhrajyothiButton.setOnClickListener(onclicklistener);
+		
 		}
 
 	@Override
@@ -31,5 +34,10 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	public boolean onOptionsItemSelected(MenuItem item){
+		startActivity(new Intent(this, SettingsPage.class));
+		return true;
+	}
+	
 
 }
