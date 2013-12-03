@@ -12,5 +12,18 @@
     <string name="title_activity_paper_view">PaperViewActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="notifications_off">Notifications Off</string>
+    <string name="notifications_on">Notifications On</string>
+    <string name="hd_on">HD On</string>
+    <string name="hd_off">HD Off</string>
+    <string name="pdf_data_off">Download on Data - Off</string>
+    <string name="pdf_data_on">Download on Data - ON</string>
+    <string name="version">Version</string>
+    <string name="pdfondata">Save PDF on Data</string>
+    <string name="paperinhd">View Paper in HD</string>
+    <string name="notifications">Notifications</string>
+    <string name="preferences">Preferences</string>
+    <string name="feedback">Feedback</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
 
 </resources>

@@ -1,6 +1,6 @@
 package com.newzreadrapp.newzreadr;
 
-import com.newzreadrapp.newzreadr.util.SystemUiHider;
+import com.newzreadrapp.newzreadr.Utils.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

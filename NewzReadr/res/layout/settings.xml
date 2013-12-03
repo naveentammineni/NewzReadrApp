@@ -1,44 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="Preferences">
+    xmlns:switchpref="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:title="@string/preferences" >
 
-  <PreferenceCategory
-     android:title="Options">
-
-     <CheckBoxPreference
-       android:key="pref_opt1"
-       android:title="Option 1"
-       android:summary="Tick to set this option"
-       android:defaultValue="true"
-       />
-    <CheckBoxPreference
-       android:key="pref_opt2"
-       android:title="Option 2"
-       android:summary="Tick to set this option"
-       android:defaultValue="true"
-       />
-  </PreferenceCategory>
-
-  <PreferenceCategory
-     android:title="Selection">
-
-    <EditTextPreference
-        android:key="pref_text"
-        android:title="Input text"
-        android:summary="Tap to enter some text"
-        android:dialogTitle="Enter text"
-    />
-     
-  </PreferenceCategory>
-
+  <org.jraf.android.backport.switchwidget.SwitchPreference
+        android:key="notificationsKey"
+        android:title="@string/notifications"
+        switchpref:summaryOff="@string/notifications_off"
+        switchpref:summaryOn="@string/notifications_on" />
+  
+  <org.jraf.android.backport.switchwidget.SwitchPreference
+        android:key="notificationsKey"
+        android:title="@string/paperinhd"
+        switchpref:summaryOff="@string/hd_off"
+        switchpref:summaryOn="@string/hd_on" />
+  
+  <org.jraf.android.backport.switchwidget.SwitchPreference
+        android:key="notificationsKey"
+        android:title="@string/pdfondata"
+        switchpref:summaryOff="@string/pdf_data_off"
+        switchpref:summaryOn="@string/pdf_data_on" />
+  
   <Preference
-    android:title="Intent"
-    android:summary="Open a webpage">
-
-    <intent
-      android:action="android.intent.action.VIEW"
-      android:data="http://android-elements.blogspot.com/" />
-
-  </Preference>
-   
+            android:title="@string/version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/version" 
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:summary="Version-1.0"
+        	/>
+  <Preference
+            android:title="@string/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/feedback" 
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:summary="Click to provide feedback"
+        	/>
+  
 </PreferenceScreen>
